@@ -38,6 +38,40 @@ Amb Turbo Pascal a les últimes, i, en conseqüència Pascal també, es va dur a
 ## Delphi
 És un entorn de desenvolupament de software que utilitza com a llenguatge de programació l'Object Pascal. És multiplataforma, soporta Windows, macOS, iOS, Android i Linux. El seu principal ús és el desenvolupament d'aplicacions visuals i de bases de dades client-servidor, però es pot utilitzar per a desenvolupar qualsevol cosa pràcticament, com per exemple apps per consola o apps de web. Una de les aplicacions més populars que han estat creades amb Delphi i Object Pascal és Skype.
 # Paradigmes de programació
+## Què són els paradigmes de programació?
+Buscant per internet he trobat diferents definicions, però potser la que més m'ha agradat ha estat la següent:  
+> Un paradigma de programació indica un mètode de realitzar còmputs i la manera en que s'han d'estructurar i organitzar les tasques que ha de dur a terme un programa.
+
+Pel que sé i he vist, els llenguatges de programació solen implementar no un, si no diversos d'ells. I, pel general, cada paradigma s'associa a un estil de programar. A continuació faig una menció als paradigmes més comuns que podem trobar:
+- Paradigma imperatiu: descriu *com* s'ha de realitzar el càlcul.
+- Paradigma declaratiu: descriu *què* s'ha de calcular.
+    - Paradigma funcional
+    - Paradigma lògic
+- Paradigma orientat a objectes
+## Paradigmes de programació que fa servir Pascal
+Pascal bàsicament fa ús del paradigma **imperatiu**. Dins d'aquest paradigma trobem altres paradigmes dels quals Pascals fa ús de:
+- Paradigma procedural
+- Paradigma estructurat
+
+A continuació entrarem en més detall amb aquests tres paradigmes de programació.
+### Paradigma imperatiu
+És un dels paradigmes més representatius. Va ser el primer paradigma acceptat. Tal i com el seu nom indica, imperatiu significa donar ordres, i això és el que fan aquells llenguatges que són imperatius.  
+Les principals característiques que tenen els llenguatges imperatius són:
+- Expressen **com** s'ha de realitzar el càlcul.
+- Un programa està format per un conjunt d'instruccions que s'executen seguint un flux de control. Aquestes instruccions **modifiquen** l'estat del programa.
+- Tenim **variables**, les quals s'emmagatzemen a memòria i poden ser modificades durant l'execució d'un programa.
+- Aquestes variables contenen dades o referències que estableixen l'estat del programa. Per tant, el resultat d'un programa correspon amb l'estat final que tenen les variables.
+- La instrucció principal és l'**assignació**.
+- Podem executar un conjunt d'instruccions de manera repetida.
+- Basat en el model de còmput de màquines de Turing.
+### Paradigma procedural
+Aquest paradigma es basa principalment en aglutinar tots els conjunts d'instruccions repetits en un o més d'un programa en un procediment o funció. D'aquesta manera, cada cop que volguem executar aquella part del codi simplement hem de cridar al procediment o funció que toqui.  
+Fent ús de funcions ens estalviem moltes repeticions i fem els programes molt més curts i comprensibles. En termes de la màquina no aconseguim cap millora, és únicament un paradigma que ens manté l'estructura d'un programa molt més neta i ordenada.
+### Paradigma estructurat
+Aquest paradigma es troba orientat a millorar el desenvolupament d'un programa. Es fa ús de:
+- Blocs d'instruccions
+- Condicionals (*if* i *switch*)
+- Iteració (*for* i *while*)
 # Compilat o interpretat
 # Sistema de tipus
 # Principals aplicacions
@@ -47,6 +81,7 @@ Amb Turbo Pascal a les últimes, i, en conseqüència Pascal també, es va dur a
 ## Tipus
 # Fonts d'informació
 # Bibliografia
-**Wikipedia, la enciclopedia libre. *Pascal (lenguaje de programación)* [https://es.wikipedia.org/wiki/Pascal_(lenguaje_de_programaci%C3%B3n)](https://es.wikipedia.org/wiki/Pascal_(lenguaje_de_programaci%C3%B3n))**  
-***Historia del lenguaje Pascal* [http://historiapascalrichard.blogspot.com/](http://historiapascalrichard.blogspot.com/)**  
-**Wikibooks. *Programación en Pascal / Historia* [https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_Pascal/Historia](https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_Pascal/Historia)**
+**Wikipedia, la enciclopedia libre. *Pascal (lenguaje de programación).* [https://es.wikipedia.org/wiki/Pascal_(lenguaje_de_programaci%C3%B3n)](https://es.wikipedia.org/wiki/Pascal_(lenguaje_de_programaci%C3%B3n))**  
+***Historia del lenguaje Pascal.* [http://historiapascalrichard.blogspot.com/](http://historiapascalrichard.blogspot.com/)**  
+**Wikibooks. *Programación en Pascal / Historia.* [https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_Pascal/Historia](https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_Pascal/Historia)**
+**Universidad de Valladolid. *Paradigmas de programación.* [https://www.infor.uva.es/~cvaca/asigs/docpar/intro.pdf](https://www.infor.uva.es/~cvaca/asigs/docpar/intro.pdf)**
