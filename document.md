@@ -73,9 +73,28 @@ Aquest paradigma es troba orientat a millorar el desenvolupament d'un programa. 
 - Condicionals (*if* i *switch*)
 - Iteració (*for* i *while*)
 # Compilat o interpretat
+Pascal és un llenguatge **compilat**. Què vol dir que sigui un llenguatge compilat? Doncs que el codi font, que ha estat escrit en un llenguatge d'alt nivell (en aquest cas Pascal), passa per un compilador que el tradueix a un llenguatge que la màquina entèn. Aquesta traducció queda guardada en un arxiu que serà el que executarem.  
+Els compiladors de Pascal més destacables, ja sigui actualment o perquè ho van ser en el seu moment, són:
+- Delphi
+- Free Pascal
+- GNU Pascal
+- Turbo Pascal
+- Oxygene
+
+
+L'avantatge dels llenguatges compilats és que un cop hem compilat el nostre codi font, ja no cal tornar-ho a fer i, per tant, podem executar el programa tantes vegades com vulguem reduïnt el temps d'espera entre diverses execucions.  
+A diferència dels llenguatges interpretats, que en comptes de tenir un compilador, tenen un intèrpret que fa la traducció d'alt nivell a llenguatge màquina a cada execució, instrucció per instrucció. Òbviament això comporta una espera major entre execucions, però també té avantatges com per exemple: ens permet un tipat dinàmic de dades i es té una gran independència respecte la plataforma on s'executa.
 # Sistema de tipus
+Segons la definició donada a classe, un sistema de tipus és un conjunt de regles que assignen *tipus* als elements d'un programa per evitar errors.  
+Podem clasificar un llenguatge segons si és *type safe* o *type unsafe*. Que sigui *type safe* vol dir que cap programa donarà errors de tipu en temps d'execució. En el cas de Pascal trobem que és *type unsafe* ja que si fem servir un apuntador alliberat, ens pot donar errors de tipus.  
+Una altra característica del sistema de tipus d'un llenguatge és si té un *tipat fort* o un *tipat feble*. Amb un *tipat fort* s'evita barrejar valors de diferents tipus, d'aquesta manera ens evitem molts problemes. Tampoc podem aplicar una operació a un valor que no sigui d'un tipus que permeti aplicar-la. En aquest cas, Pascal el té *fort*.  
+Com a tercera característica trobem de nou una altra classificació. En aquest cas entre *manifest typing* i *inferred typing*. Pascal és *manifest*, això vol dir que s'ha d'especificar explícitament el tipus de cadascuna de les variables declarades. Per contra, en un llenguatge amb *inferència* de tipus, s'auto detecta el tipus de les dades.
+Finalment, la última característica a determinar per al sistema de tipus és si el llenguatge fa servir una comprovació de tipus *estàtica* o *dinàmica*. L'*estàtica* es porta a terme en temps de compilació, en canvi, la *dinàmica* ho fa en temps d'execució. Doncs Pascal té una comprovació de tipus *estàtica*. Això comporta que en Pascal, cada variable i cada paràmetre té un tipus associat.
 # Principals aplicacions
+Tal i com ja hem comentat amb anterioritat en els primers apartats, Pascal va néixer com un llenguatge dirigit a alumnes i no com un llenguatge enfocat al desenvolupament professional. L'objectiu que tenia Niklaus Wirth quan va crear-lo, era el de facilitar l'aprenentatge de programar als seus propis alumnes, fent ús de la programació estructurada que té Pascal. Però, l'ús d'aquest llenguatge va traspassar la frontera acadèmica i mica en mica va aconseguir convertir-se en una eina per crear i desenvolupar qualsevol tipus de programa. Aquesta gran popularitat va arribar gràcies a les seves característiques que fan que sigui un llenguatge fàcilment llegible i molt estructurat, tal i com hem comentat abans.
 # Llenguatges semblants
+Té forces aspectes en comú amb C++. Tots dos són *type unsafe*, tenen un *tipat fort* i tenen una comprovació de tipus *estàtica*. La principal diferència és que C++ soporta la programació orientada a objectes, cosa que Pascal no.  
+N'hi ha de molts altres, però penso que cadascún d'ells té el seu estil i no hi ha una forma exacta de declarar que siguin "semblants".
 # Exemples de codi
 # Altres característiques del llenguatge
 ## Tipus
@@ -85,3 +104,4 @@ Aquest paradigma es troba orientat a millorar el desenvolupament d'un programa. 
 ***Historia del lenguaje Pascal.* [http://historiapascalrichard.blogspot.com/](http://historiapascalrichard.blogspot.com/)**  
 **Wikibooks. *Programación en Pascal / Historia.* [https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_Pascal/Historia](https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_Pascal/Historia)**
 **Universidad de Valladolid. *Paradigmas de programación.* [https://www.infor.uva.es/~cvaca/asigs/docpar/intro.pdf](https://www.infor.uva.es/~cvaca/asigs/docpar/intro.pdf)**
+***Paradigma imperativo.* [https://kevinldp.wordpress.com/paradigma-imperativo/](https://kevinldp.wordpress.com/paradigma-imperativo/)**
