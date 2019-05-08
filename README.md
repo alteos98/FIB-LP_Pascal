@@ -1,1 +1,0 @@
-# FIB-LP_Pascal
