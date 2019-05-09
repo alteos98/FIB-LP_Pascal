@@ -100,8 +100,13 @@ A continuació, exposaré una sèrie de blocs de codi que ajudaràn a comprendre
 Abans de començar, mencionar les tres parts principals que té un programa en Pascal:
 - Program: paraula reservada que explicita el començament d'un programa. No és estrictament necessari el seu ús.
 - Var: part on es declaren les variables. Pots declarar diferents variables d'un mateix tipus separant-les per comes.
-- Begin - End: etiquetes que marquen l'inici i el final de les instruccions a executar.
+- Begin - End: paraules reservades que marquen l'inici i el final d'un bloc d'instruccions a executar.
+
+A més, podem trobar altres paraules reservades que ens permeten declarar funcions, procedures, etc.
 ## Input / Output
+En el següent exemple podem veure les tres partes ben diferenciades. A *var* tenim les variables *num1* i *num2*, que són enters. A continuació, trobem el bloc de les instruccions a executar. En aquest cas ens trobem amb:
+- write / writeln: ens permet escriure per pantalla.
+- readln: ens permet llegir per pantalla.
 ~~~
 program input_output;
 var
@@ -116,6 +121,19 @@ begin
 end.
 ~~~
 ## Funcions
+En aquest cas, veiem com es declara una funció en Pascal. Primerament, tenim les paraules reservades *program* i *var* que fan referència al programa principal i tal i com hem vist a l'exemple anterior, ens permet declarar variables. La diferència la trobem ara, en comptes de tenir el bloc *begin - end* del programa principal, trobem la paraula *function*. Aquesta etiqueta és la que ens permet la declaració de la funció. Té la següent estructura:
+~~~
+function name(argument(s): type1; argument(s): type2; ...): function_type;
+var declarations;
+
+begin
+    ...
+    < statements >
+    ...
+    name:= expression;
+end;
+~~~
+La variable que ens permet emmagatzemar el que torna la funció es diu igual que el nom de la funció. A continuació he fet un petit exemple real d'un programa amb una funció.
 ~~~
 program exemple_funcio;
 var
@@ -146,6 +164,74 @@ begin
     writeln('El mínim és: ', ret);
 end.
 ~~~
+## Procedures
+Ara explicarem els procedures. La diferència entre un procedure i una funció és que en aquest cas, no es retorna res. Però es poden passar variables per referència i modificar-les en el propi procedure. L'estructura que té és la següent (il·lustrada en un exemple real ja):
+~~~
+program exemple_procedure;
+var
+    a, b, ret : integer;
+
+(*definició del procedure que troba el mínim entre dos nombres*)
+procedure min(num1, num2: integer; var resultat: integer);
+
+begin
+    if (num1 < num2) then
+        resultat := num1
+    else
+        resultat := num2;
+end;
+
+begin
+    a := 5;
+    b := 10;
+
+    (* crida al procedure *)
+    min(a, b, ret);
+   
+    writeln('El mínim és: ', ret);
+end.
+~~~
+Veiem com en aquest cas, en comptes de retornar el valor del mínim, tenim una variable que la passem per referència i fiquem el valor en aquesta mateixa. Per passar una variable per referència l'únic que hem de fer és posar la paraula reservada *var* davant de la variable que volguem passar per referència a la capçalera del procedure / funció.
+## Recursivitat
+També podem utilitzar recursivitat en Pascal, quan una funció es crida a sí mateixa. En aquest cas he fet el càlcul del factorial per a un nombre entrat per l'usuari per pantalla.
+~~~
+program exemple_recursivitat
+var
+    n, resultat: integer;
+
+function factorial(x: integer): integer;
+
+begin
+    if x = 0 then
+        factorial := 1
+    else
+        factorial := x * factorial(x-1);
+end;
+
+begin
+    writeln('Entra un número per calcular el seu factorial:');
+    readln(n);
+    resultat := factorial(n);
+    writeln('El factorial de ', n, ' és ', resultat);
+end.
+~~~
+## Bucles
+Òbviament també tenim bucles, els podem fer servir amb la construcció *while .. do*. El que hem fet per poder escriure un bloc d'instruccions dins del bucle és anidar un *begin .. end* a dins. L'exemple mostrat a continuació mostra com fer un petit bucle.
+~~~
+program exemple_bucle
+var
+    n: integer;
+
+begin
+    writeln('Entra un número per escriure tots els valors des de n fins a 0:');
+    readln(n);
+    while n <> 0 do
+    begin
+        writeln(n)
+        n := n - 1
+    end;
+end.
+~~~
 # Altres característiques del llenguatge
 ## Tipus
 # Fonts d'informació
@@ -153,5 +239,6 @@ end.
 **Wikipedia, la enciclopedia libre. *Pascal (lenguaje de programación).* [https://es.wikipedia.org/wiki/Pascal_(lenguaje_de_programaci%C3%B3n)](https://es.wikipedia.org/wiki/Pascal_(lenguaje_de_programaci%C3%B3n))**  
 ***Historia del lenguaje Pascal.* [http://historiapascalrichard.blogspot.com/](http://historiapascalrichard.blogspot.com/)**  
 **Wikibooks. *Programación en Pascal / Historia.* [https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_Pascal/Historia](https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_Pascal/Historia)**
-**Universidad de Valladolid. *Paradigmas de programación.* [https://www.infor.uva.es/~cvaca/asigs/docpar/intro.pdf](https://www.infor.uva.es/~cvaca/asigs/docpar/intro.pdf)**
-***Paradigma imperativo.* [https://kevinldp.wordpress.com/paradigma-imperativo/](https://kevinldp.wordpress.com/paradigma-imperativo/)**
+**Universidad de Valladolid. *Paradigmas de programación.* [https://www.infor.uva.es/~cvaca/asigs/docpar/intro.pdf](https://www.infor.uva.es/~cvaca/asigs/docpar/intro.pdf)**  
+***Paradigma imperativo.* [https://kevinldp.wordpress.com/paradigma-imperativo/](https://kevinldp.wordpress.com/paradigma-imperativo/)**  
+**Tutorials on point. *Pascal Tutorial* [https://www.tutorialspoint.com/pascal/index.htm](https://www.tutorialspoint.com/pascal/index.htm)**
