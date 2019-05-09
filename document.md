@@ -96,6 +96,56 @@ Tal i com ja hem comentat amb anterioritat en els primers apartats, Pascal va n�
 Té forces aspectes en comú amb C++. Tots dos són *type unsafe*, tenen un *tipat fort* i tenen una comprovació de tipus *estàtica*. La principal diferència és que C++ soporta la programació orientada a objectes, cosa que Pascal no.  
 N'hi ha de molts altres, però penso que cadascún d'ells té el seu estil i no hi ha una forma exacta de declarar que siguin "semblants".
 # Exemples de codi
+A continuació, exposaré una sèrie de blocs de codi que ajudaràn a comprendre millor tota la sintaxi de Pascal i veure com podem fer un programa.  
+Abans de començar, mencionar les tres parts principals que té un programa en Pascal:
+- Program: paraula reservada que explicita el començament d'un programa. No és estrictament necessari el seu ús.
+- Var: part on es declaren les variables. Pots declarar diferents variables d'un mateix tipus separant-les per comes.
+- Begin - End: etiquetes que marquen l'inici i el final de les instruccions a executar.
+## Input / Output
+~~~
+program input_output;
+var
+    (* declaració de variables *)
+    num1, num2 : integer;
+
+begin
+    write('Input the first number:');
+    readln(num1);
+    writeln('Input the second number:');
+    readln(num2);
+end.
+~~~
+## Funcions
+~~~
+program exemple_funcio;
+var
+    a, b, ret : integer;
+
+(*definició de la funció que ens torna el mínim entre dos nombres*)
+function min(num1, num2: integer): integer;
+var
+    (* declaració de variables locals de la funció *)
+    result: integer;
+
+begin
+    if (num1 < num2) then
+        result := num1
+    else
+        result := num2;
+    
+    min := result;
+end;
+
+begin
+    a := 5;
+    b := 10;
+
+    (* crida a la funció *)
+    ret := min(a, b);
+   
+    writeln('El mínim és: ', ret);
+end.
+~~~
 # Altres característiques del llenguatge
 ## Tipus
 # Fonts d'informació
