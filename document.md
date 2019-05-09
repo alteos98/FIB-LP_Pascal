@@ -216,7 +216,7 @@ begin
 end.
 ~~~
 ## Bucles
-Òbviament també tenim bucles, els podem fer servir amb la construcció *while .. do*. El que hem fet per poder escriure un bloc d'instruccions dins del bucle és anidar un *begin .. end* a dins. L'exemple mostrat a continuació mostra com fer un petit bucle.
+Òbviament també tenim bucles, els podem fer servir amb la construcció *while .. do*. Aquesta construcció avalua la condició abans d'executar l'interior, per tant, si de primeres la condició ja no es compleix, mai s'arribarà a executar el bucle. El que hem fet per poder escriure un bloc d'instruccions dins del bucle és anidar un *begin .. end* a dins. L'exemple mostrat a continuació mostra com fer un petit bucle.
 ~~~
 program exemple_bucle
 var
