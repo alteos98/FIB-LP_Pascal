@@ -7,7 +7,7 @@ Quadrimestre de primavera del curs 2018/19
 ---
 ### Història
 Va ser desenvolupat pel professor suís Niklaus Wirth (Institut tecnològic de Zurich, Suïssa) al 1971. El nom és en honor a Blaise Pascal, matemàtic, físic i filòsof francès que va contribuir a disenyar les calculadores mecàniques, va fer nombroses aportacions a la teoria de la probabilitat, entre moltes altres coses.  
-Previàment a treballar en Pascal, Niklaus Wirth va desenvolupar Euler i ALGOL W, i, a posteriori va desenvolupar Modula-2 i Oberon.  
+Prèviament a treballar en Pascal, Niklaus Wirth va desenvolupar Euler i ALGOL W, i, a posteriori va desenvolupar Modula-2 i Oberon.  
 Al començament, Pascal va néixer com una idea per millorar l'ensenyança de tècniques de programació a l'alumnat de la universitat on era professor. Però, es va començar a extendre i pràcticament es va convertir en el llenguatge de programació de tota una generació d'estudiants.
 
 ### Pascal a les aules
@@ -37,12 +37,13 @@ Amb l'aparició de Turbo Pascal i el gran boom que va tenir, es van continuar tr
 - Turbo Pascal 6.0, 1990.
 - Turbo Pascal 7.0, 1992.
 
-Afegir que aquest éxit, en una part important, va ser degut al Apple Pascal. Ja que la major part dels programes desenvolupats per al Mac estaven en Pascal.  
+Afegir que aquest éxit, en una part important, va ser degut al Apple Pascal. Ja que la major part dels programes desenvolupats per al Mac estaven en Pascal i també una bona part dels programes de MS-DOS. A més, el preu de Turbo Pascal estava en 49 dòlars mentre que el compilador de Pascal de Microsoft valia més de 100.  
 Un cop arribat a mitjans dels 90, amb l'aparició de Java, l'estandarització del llenguatge C i el constant creixement d'altre llenguatge com el C++, Pascal va passar a un segon pla. Un altre fort cop per al Pascal va ser que Apple va baixar el suport també.  
 Amb Turbo Pascal a les últimes, i, en conseqüència Pascal també, es va dur a terme un projecte que intentava fer un mix entre Pascal i Object Pascal, i el resultat va ser Delphi.
 
 ### Delphi
-És un entorn de desenvolupament de software que utilitza com a llenguatge de programació l'Object Pascal. És multiplataforma, soporta Windows, macOS, iOS, Android i Linux. El seu principal ús és el desenvolupament d'aplicacions visuals i de bases de dades client-servidor, però es pot utilitzar per a desenvolupar qualsevol cosa pràcticament, com per exemple apps per consola o apps de web. Una de les aplicacions més populars que han estat creades amb Delphi i Object Pascal és Skype.
+És un entorn de desenvolupament de software que utilitza com a llenguatge de programació l'Object Pascal. És multiplataforma, soporta Windows, macOS, iOS, Android i Linux. El seu principal ús és el desenvolupament d'aplicacions visuals i de bases de dades client-servidor, però es pot utilitzar per a desenvolupar qualsevol cosa pràcticament, com per exemple apps per consola o apps de web. Una de les aplicacions més populars que han estat creades amb Delphi i Object Pascal és Skype.  
+Object Pascal va ser una evolució de Pascal en la qual s'introduïa el paradigma orientat a objectes entre d'altres coses. Va ser desenvolupat per Apple amb el suport de Niklaus Wirth, creador de Pascal.
 
 ## Paradigmes de programació
 ---
@@ -50,7 +51,7 @@ Amb Turbo Pascal a les últimes, i, en conseqüència Pascal també, es va dur a
 Buscant per internet he trobat diferents definicions, però potser la que més m'ha agradat ha estat la següent:  
 > Un paradigma de programació indica un mètode de realitzar còmputs i la manera en que s'han d'estructurar i organitzar les tasques que ha de dur a terme un programa.
 
-Pel que sé i he vist, els llenguatges de programació solen implementar no un, si no diversos d'ells. I, pel general, cada paradigma s'associa a un estil de programar. A continuació faig una menció als paradigmes més comuns que podem trobar:
+Pel que sé i he vist, els llenguatges de programació solen utilitzar no un, si no diversos d'ells. I, pel general, cada paradigma s'associa a un estil de programar. A continuació faig una menció als paradigmes més comuns que podem trobar:
 - Paradigma imperatiu: descriu *com* s'ha de realitzar el càlcul.
 - Paradigma declaratiu: descriu *què* s'ha de calcular.
     - Paradigma funcional
@@ -62,7 +63,7 @@ Pascal bàsicament fa ús del paradigma **imperatiu**. Dins d'aquest paradigma t
 - Paradigma procedural
 - Paradigma estructurat
 
-A continuació entrarem en més detall amb aquests tres paradigmes de programació.
+Mencionar que en el cas d'Object Pascal també s'utilitza el paradigma de la programació orientada a objectes. A continuació entrarem en més detall amb aquests tres paradigmes de programació.
 
 #### Paradigma imperatiu
 És un dels paradigmes més representatius. Va ser el primer paradigma acceptat. Tal i com el seu nom indica, imperatiu significa donar ordres, i això és el que fan aquells llenguatges que són imperatius.  
@@ -85,6 +86,10 @@ Aquest paradigma es troba orientat a millorar el desenvolupament d'un programa. 
 - Condicionals (*if* i *switch*)
 - Iteració (*for* i *while*)
 
+S'aconsegueixen grans avantatges, com per exemple:
+- Facilita el treball simultani entre diferents programadors
+- Reutilització de codi
+
 ## Compilat o interpretat
 ---
 Pascal és un llenguatge **compilat**. Què vol dir que sigui un llenguatge compilat? Doncs que el codi font, que ha estat escrit en un llenguatge d'alt nivell (en aquest cas Pascal), passa per un compilador que el tradueix a un llenguatge que la màquina entèn. Aquesta traducció queda guardada en un arxiu que serà el que executarem.  
@@ -101,7 +106,7 @@ A diferència dels llenguatges interpretats, que en comptes de tenir un compilad
 ## Sistema de tipus
 ---
 Segons la definició donada a classe, un sistema de tipus és un conjunt de regles que assignen *tipus* als elements d'un programa per evitar errors.  
-Podem clasificar un llenguatge segons si és *type safe* o *type unsafe*. Que sigui *type safe* vol dir que cap programa donarà errors de tipu en temps d'execució. En el cas de Pascal trobem que és *type unsafe* ja que si fem servir un apuntador alliberat, ens pot donar errors de tipus.  
+Podem clasificar un llenguatge segons si és *type safe* o *type unsafe*. Que sigui *type safe* vol dir que cap programa donarà errors de tipus en temps d'execució. En el cas de Pascal trobem que és *type unsafe* ja que si fem servir un apuntador alliberat, ens pot donar errors de tipus.  
 Una altra característica del sistema de tipus d'un llenguatge és si té un *tipat fort* o un *tipat feble*. Amb un *tipat fort* s'evita barrejar valors de diferents tipus, d'aquesta manera ens evitem molts problemes. Tampoc podem aplicar una operació a un valor que no sigui d'un tipus que permeti aplicar-la. En aquest cas, Pascal el té *fort*.  
 Com a tercera característica trobem de nou una altra classificació. En aquest cas entre *manifest typing* i *inferred typing*. Pascal és *manifest*, això vol dir que s'ha d'especificar explícitament el tipus de cadascuna de les variables declarades. Per contra, en un llenguatge amb *inferència* de tipus, s'auto detecta el tipus de les dades.
 Finalment, la última característica a determinar per al sistema de tipus és si el llenguatge fa servir una comprovació de tipus *estàtica* o *dinàmica*. L'*estàtica* es porta a terme en temps de compilació, en canvi, la *dinàmica* ho fa en temps d'execució. Doncs Pascal té una comprovació de tipus *estàtica*. Això comporta que en Pascal, cada variable i cada paràmetre té un tipus associat.
