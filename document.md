@@ -299,9 +299,9 @@ Gran part de la informació extreta per a l'elaboració d'aquest docuement s'ha 
 
 ## Bibliografia
 ---
-***Historia del lenguaje Pascal.* [http://historiapascalrichard.blogspot.com/](http://historiapascalrichard.blogspot.com/)**  
-***Paradigma imperativo.* [https://kevinldp.wordpress.com/paradigma-imperativo/](https://kevinldp.wordpress.com/paradigma-imperativo/)**  
-**Tutorials on point. *Pascal Tutorial* [https://www.tutorialspoint.com/pascal/index.htm](https://www.tutorialspoint.com/pascal/index.htm)**  
-**Universidad de Valladolid. *Paradigmas de programación.* [https://www.infor.uva.es/~cvaca/asigs/docpar/intro.pdf](https://www.infor.uva.es/~cvaca/asigs/docpar/intro.pdf)**  
-**Wikibooks. *Programación en Pascal / Historia.* [https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_Pascal/Historia](https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_Pascal/Historia)**  
-**Wikipedia, la enciclopedia libre. *Pascal (lenguaje de programación).* [https://es.wikipedia.org/wiki/Pascal_(lenguaje_de_programaci%C3%B3n)](https://es.wikipedia.org/wiki/Pascal_(lenguaje_de_programaci%C3%B3n))**
+Omar Lara, Kevin. (2014). Lenguajes de programación: Paradigma imperativo. *Portafolio digital de Kevin Omar Lara.* Recuperat de https://kevinldp.wordpress.com/paradigma-imperativo/  
+*Pascal Tutorial.* (Sense data). Recuperat de https://www.tutorialspoint.com/pascal/index.htm  
+Soep666. (2011). Historia del lenguaje Pascal: Breve historia y definiciones. *Historia Pascal Richard.* Recuperat de http://historiapascalrichard.blogspot.com/  
+Vaca Rodríguez, César. (2012-2013). Universidad de Valladolid: *Paradigmas de programación.* Recuperat de https://www.infor.uva.es/~cvaca/asigs/docpar/intro.pdf  
+*Wikibooks. Programación en Pascal / Historia.* (Actualitzat per darrer cop al 2013). Recuperat de https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_Pascal/Historia  
+*Wikipedia, la enciclopedia libre. Pascal (lenguaje de programación).* (Actualitzat per darrer cop al 2019). Recuperat de https://es.wikipedia.org/wiki/Pascal_(lenguaje_de_programaci%C3%B3n)
